@@ -7,20 +7,20 @@ Data: Customize the data below as you please.
 ***********/
 
 const SKILL_NAME = "Pepper";
-const STOP_MESSAGE = "Catch you later!";
+const STOP_MESSAGE = "Catch you later! Bye";
 const CANCEL_MESSAGE = "Oh. Do you want to try a different recipe instead?";
 
 const HELP_START = "I can help you find a recipe and walk you through cooking your meal.";
 const HELP_START_REPROMPT = "What type of meal would you like to prepare?";
-const HELP_RECIPE = "Choose a recipe you would like to get started on.";
-const HELP_RECIPE_REPROMPT = "Pick a recipe you would like to try!";
-const HELP_INSTRUCTIONS = "You can ask me to repeat the instructions or say 'next' to hear the next step.";
-const HELP_INSTRUCTIONS_REPROMPT = "Hello.";
-const HELP_CANCEL = "We can switch recipes or we could just part ways.";
-const HELP_CANCEL_REPROMPT = "Sad to see you go but hope you change your mind.";
+const HELP_RECIPE = "Say 'Yes' if you want to cook this recipe or say 'No' if you want to hear a different one. Say 'Cancel' to change the meal type";
+const HELP_RECIPE_REPROMPT = "Pick a recipe you would like to try! You can also ask me about the ingredients";
+const HELP_INSTRUCTIONS = "You can ask me to 'repeat' the instructions or say 'next' to hear the next step.";
+const HELP_INSTRUCTIONS_REPROMPT = "I can repeat the previous step or move on with the recipe if you say next. You can also say cancel to exit this recipe.";
+const HELP_CANCEL = "We can switch recipes or we could continue on with this one.";
+const HELP_CANCEL_REPROMPT = "Say 'Yes' to switch to a different meal type or 'No' if you want to return to the recipe.";
 
-const CHOOSE_TYPE_MESSAGE = "Hi, I'm Pepper, your cooking assistant! What would you like to cook today?";
-const REPROMPT_TYPE = "If you don't know what to eat, we can search saying either breakfast, lunch, dinner or snack.";
+const CHOOSE_TYPE_MESSAGE = "Hi, I'm Pepper, your cooking assistant! What would you like to cook today? I can show you recipes if you tell me what type of meal you're looking for. Please say breakfast, lunch, dinner or snack";
+const REPROMPT_TYPE = "Say either breakfast, lunch, dinner or snack and I will recommend some recipes to you!";
 const MEALTYPE_NOT_IN_LIST = chosenType => `Sorry, I couldn't find any recipes for ${chosenType}. Do you want a breakfast, lunch, dinner or snack recipe?`;
 
 const RECIPE_ADJECTIVES = [
@@ -33,9 +33,9 @@ const RECIPE_ADJECTIVES = [
   "great",
   "delicious"
 ];
-const SUGGEST_RECIPE = recipeName => `I found this ${_pickRandom(RECIPE_ADJECTIVES)} ${recipeName} recipe! Shall we start making the ${recipeName}?`;
-const MISUNDERSTOOD_RECIPE_ANSWER = "Sorry was that a yes or a no?";
-const NO_REMAINING_RECIPE = "That's all the recipes I know for now...for more you'll need to wait until the next release."
+const SUGGEST_RECIPE = recipeName => `I found this ${_pickRandom(RECIPE_ADJECTIVES)} ${recipeName} recipe! Shall we start making the ${recipeName}? You could also ask to hear the ingredients`;
+const MISUNDERSTOOD_RECIPE_ANSWER = "Sorry, was that a yes or a no? If you want to change the meal type, say Cancel.";
+const NO_REMAINING_RECIPE = "That's all the recipes I know for now...for more, you'll need to wait until the next release!"
 const INGREDIENTS_INTRO = "We will need"; // Here follows a list of ingredients
 const INGREDIENTS_ENDING = "How does that sound to you? Salivating yet?"; // Will be said after the list of ingredients
 
